@@ -1,6 +1,6 @@
 # DVDScreensaver
 
-A program that emulates the iconic dvd screensaver. Written in python and the pygame module.
+A program that emulates the iconic dvd screensaver. Written in python and the pygame module. And it of course is in a 4:3 aspect ratio
 
 
 ## Usage
