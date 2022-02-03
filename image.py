@@ -8,13 +8,12 @@ class Image():
         self.image = pygame.transform.scale(self.image, (self.image_width, self.image_height))
         self.x = x
         self.y = y 
-        self.speed_x = 2
-        self.speed_y = 2
-        print(self.image)
+        self.velocity_x = 1
+        self.velocity_y = 1
 
     def move(self):
-        self.x += self.speed_x 
-        self.y += self.speed_y
+        self.x += self.velocity_x 
+        self.y += self.velocity_y
 
     def get_image_width(self):
         return self.image_width
@@ -22,20 +21,20 @@ class Image():
     def get_image_height(self):
         return self.image_height
 
-    def set_speed_x(self, speed_x):
-        self.speed_x = speed_x
+    def set_velocity_x(self, velocity_x):
+        self.velocity_x = velocity_x
 
     def increase_x(self, value):
-        self.speed_x += value
+        self.velocity_x += value
 
-    def set_speed_y(self, speed_y):
-        self.speed_y = speed_y
+    def set_velocity_y(self, velocity_y):
+        self.velocity_y = velocity_y
 
-    def get_speed_x(self):
-        return self.speed_x
+    def get_velocity_x(self):
+        return self.velocity_x
 
-    def get_speed_y(self):
-        return self.speed_y
+    def get_velocity_y(self):
+        return self.velocity_y
 
     def get_x(self):
         return self.x
