@@ -39,6 +39,7 @@ class Main():
         pygame.quit()
         quit()
 
+
 if __name__ == '__main__':
     m = Main()
     m.mainloop()

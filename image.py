@@ -1,18 +1,20 @@
 import pygame
 
+
 class Image():
     def __init__(self, x, y):
         self.image = pygame.image.load('dvd.png')
         self.image_width = self.image.get_width() / 8
         self.image_height = self.image.get_height() / 8
-        self.image = pygame.transform.scale(self.image, (self.image_width, self.image_height))
+        self.image = pygame.transform.scale(
+            self.image, (self.image_width, self.image_height))
         self.x = x
-        self.y = y 
+        self.y = y
         self.velocity_x = 1
         self.velocity_y = 1
 
     def move(self):
-        self.x += self.velocity_x 
+        self.x += self.velocity_x
         self.y += self.velocity_y
 
     def get_image_width(self):
@@ -44,7 +46,7 @@ class Image():
 
     def draw(self, screen):
         screen.blit(self.image, (self.x, self.y))
-    
+
     def update(self, screen):
         self.draw(screen)
         self.move()
