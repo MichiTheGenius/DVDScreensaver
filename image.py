@@ -10,8 +10,8 @@ class Image():
             self.image, (self.image_width, self.image_height))
         self.x = x
         self.y = y
-        self.velocity_x = 1
-        self.velocity_y = 1
+        self.velocity_x = -1
+        self.velocity_y = -1
 
     def move(self):
         self.x += self.velocity_x

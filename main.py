@@ -11,7 +11,7 @@ class Main():
             (WIDTH, HEIGHT))
         pygame.display.set_caption('DVD screensaver')
 
-        self.dvd_logo = Image(0, 0)
+        self.dvd_logo = Image(100, 100)
 
     def mainloop(self):
         running = True
